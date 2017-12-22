@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.PokemonDetailsActivity"
+    tools:showIn="@layout/activity_pokemon_details">
+
+    <RelativeLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_t_descricao"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:text="Descrição"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_descricao"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_descricao"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/indie_flower"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_numero"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_descricao"
+            android:layout_marginTop="10dp"
+            android:text="Número"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_numero"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_numero"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/indie_flower"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_altura"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_numero"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/pokemon_solid"
+            android:text="Altura"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_altura"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_altura"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/indie_flower"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_peso"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_altura"
+            android:layout_marginTop="10dp"
+            android:text="Peso"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_peso"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_peso"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/indie_flower"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_sexo"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_peso"
+            android:layout_marginTop="10dp"
+            android:text="Sexo"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_sexo"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_sexo"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/indie_flower"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_categoria"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_sexo"
+            android:layout_marginTop="10dp"
+            android:text="Categoria"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_categoria"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_categoria"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/indie_flower"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_habilidades"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_categoria"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/pokemon_solid"
+            android:text="Principais habilidades"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_habilidades"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_habilidades"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/indie_flower"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_tipo"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_habilidades"
+            android:layout_marginTop="10dp"
+            android:text="Tipo"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_tipo"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_tipo"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/indie_flower"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tv_t_fraquezas"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_tipo"
+            android:layout_marginTop="10dp"
+            android:text="Fraquezas"
+            android:fontFamily="@font/pokemon_solid"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_size" />
+
+        <TextView
+            android:id="@+id/tv_fraquezas"
+            android:layout_width="@dimen/pokemon_habilities_field_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv_t_fraquezas"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/indie_flower"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
